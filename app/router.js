@@ -93,7 +93,7 @@ const AppNavigator = createStackNavigator(
     Login: {
       screen: LoginScreen,
     },
-    BottomNavBar: {
+    Main: {
       screen: BottomNavigator,
     },
   },

@@ -8,7 +8,7 @@ export default class LoginScreen extends Component {
         <Text>Login Page</Text>
         <Button
           title='to Home'
-          onPress={() => this.props.navigation.navigate('BottomNavBar')}
+          onPress={() => this.props.navigation.navigate('Main')}
         />
       </View>
     )
