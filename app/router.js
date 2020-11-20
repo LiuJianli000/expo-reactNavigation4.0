@@ -1,5 +1,6 @@
-import React from 'react';
-import { createStackNavigator } from 'react-navigation-stack';
+import React from 'react'
+import { createAppContainer } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation-stack'
 import { createBottomTabNavigator  } from 'react-navigation-tabs'
 import AntDesign from 'react-native-vector-icons/AntDesign'
 
@@ -108,8 +109,10 @@ const AppNavigator = createStackNavigator(
       },
     },
     mode: 'modal',
-    headerMode: 'none'
+    headerMode: 'none',
   }
 )
 
-export default AppNavigator
+const App = createAppContainer(AppNavigator)
+
+export default App
