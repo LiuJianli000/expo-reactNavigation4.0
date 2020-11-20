@@ -3,30 +3,30 @@ import appModel from './models/app'
 import homeModel from './models/home'
 import { Provider  } from 'react-redux'
 import App from './router'
- 
+
 import { create } from 'dva-core'
- 
-const models = [
+
+const allModels = [
   appModel,
   homeModel
-];
- 
+]
+
 const app = create()
  
-models.forEach((o) => {
-  app.model(o)
-});
- 
+allModels.forEach((itemModel) => {
+  app.model(itemModel)
+})
+
 app.start()
- 
+
 const store = app._store
- 
+
 export default class Container extends Component {
   render() {
     return (
       <Provider store={store}>
         <App/>
       </Provider>
-    );
+    )
   }
 }
