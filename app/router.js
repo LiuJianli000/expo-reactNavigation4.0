@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import { View, Text, Button } from 'react-native';
+import React from 'react';
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator  } from 'react-navigation-tabs'
 import AntDesign from 'react-native-vector-icons/AntDesign'
